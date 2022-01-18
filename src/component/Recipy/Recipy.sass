@@ -1,0 +1,70 @@
+.meal
+  &_img
+    max-width: 400px
+    width: 100%
+    border-radius: 10px
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3)
+  &_title
+    margin-top: 40px
+    margin-bottom: 30px
+    font-size: 40px
+    font-weight: 800
+  &_category, &_area
+    margin-top: 10px
+    text-decoration: underline
+  &_instruction
+    font-size: 14px
+    margin-top: 20px
+    text-align: justify
+  &_wrap
+    display: flex
+    margin-top: 20px
+  &_ingredient, &_measure
+    display: flex
+    flex-direction: column
+    text-align: center
+  &_measure
+    flex-grow: 1
+    &_item
+      padding: 10px 0
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+      span
+        padding: 5px
+      &.title
+        font-weight: 600
+  &_ingredient
+    flex-grow: 2
+    &_item
+      padding: 10px 0
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+      span
+        padding: 7px
+        border-radius: 5px
+      &:nth-child(n+2)
+        span
+          background: #99f2f5
+      &:nth-child(3n)
+        span
+          background: #9cf599
+      &:nth-child(4n)
+        span
+          background: #f5ae99
+      &:nth-child(5n)
+        span
+          background: #a799f5
+      &:nth-child(6n)
+        span
+          background: #f59999
+      &:nth-child(7n)
+        span
+          background: #eff599
+      &.title
+        font-weight: 600
+  &_video
+    margin-top: 25px
+    iframe
+      max-width: 100%
+    &_title
+      font-size: 20px
+      font-weight: 600
+      margin-bottom: 15px
